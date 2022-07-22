@@ -1,0 +1,12 @@
+.header__nav {
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  text-transform: uppercase;
+}
+.header__hamburger-container {
+  padding-top: 1rem;
+}/*# sourceMappingURL=header.css.map */

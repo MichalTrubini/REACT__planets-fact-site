@@ -1,0 +1,17 @@
+.header {
+
+    &__nav {
+        padding: 1.6rem 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        text-transform: uppercase;
+    }
+
+    &__hamburger-container {
+        padding-top: 1rem;
+    }
+}
