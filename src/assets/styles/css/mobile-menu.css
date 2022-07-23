@@ -1,0 +1,74 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 99;
+  top: 6.8rem;
+  padding: 2.4rem;
+  background-color: #070724;
+  width: 100%;
+  transition: transform 3s ease-in;
+  transform: translateX(100%);
+}
+.mobile-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  padding: 2rem 0;
+}
+.mobile-menu__item:last-child {
+  border-bottom: none;
+}
+.mobile-menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.mobile-menu__dot {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  border-radius: 100%;
+}
+.mobile-menu__planet {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.36px;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  top: 2px;
+}
+
+#Mercury-color {
+  background-color: #DEF4FC;
+}
+
+#Venus-color {
+  background-color: #F7CC7F;
+}
+
+#Earth-color {
+  background-color: #545BFE;
+}
+
+#Mars-color {
+  background-color: #FF6A45;
+}
+
+#Jupiter-color {
+  background-color: #ECAD7A;
+}
+
+#Saturn-color {
+  background-color: #FCCB6B;
+}
+
+#Uranus-color {
+  background-color: #65F0D5;
+}
+
+#Neptune-color {
+  background-color: #497EFA;
+}/*# sourceMappingURL=mobile-menu.css.map */

@@ -1,12 +1,16 @@
 import Header from "./components/Header";
 import Planets from "./components/Planets";
 
+import { PlanetProvider } from "./assets/context/planet-context";
+
 function App() {
   
   return (
       <div className="wrapper">
-        <Header />
-        <Planets/>
+        <PlanetProvider>
+          <Header />
+          <Planets/>
+        </PlanetProvider>
       </div>
   );
 }

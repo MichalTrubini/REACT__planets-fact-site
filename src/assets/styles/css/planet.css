@@ -37,6 +37,11 @@
   color: hsla(0deg, 0%, 100%, 0.5);
   text-decoration: underline;
 }
+.planet__arrow {
+  padding-left: 0.4rem;
+  position: relative;
+  top: 3px;
+}
 .planet__stats-container {
   display: flex;
   flex-direction: column;
@@ -64,7 +69,4 @@
   font-size: 2rem;
   line-height: 2.6rem;
   letter-spacing: -0.75px;
-}
-.planet__stats-unit {
-  text-transform: uppercase;
 }/*# sourceMappingURL=planet.css.map */

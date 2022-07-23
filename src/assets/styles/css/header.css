@@ -1,8 +1,18 @@
+.header {
+  position: relative;
+  height: 11.4rem;
+}
+.header__container {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
 .header__nav {
   padding: 1.6rem 2.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .header__logo {
   text-transform: uppercase;

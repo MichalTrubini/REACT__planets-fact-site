@@ -45,6 +45,12 @@
         text-decoration: underline;
     }
 
+    &__arrow {
+        padding-left: 0.4rem;
+        position: relative;
+        top: 3px;
+    }
+
     &__stats-container {
         display: flex;
         flex-direction: column;
@@ -75,9 +81,5 @@
         font-size: 2rem;
         line-height: 2.6rem;
         letter-spacing: -0.75px;
-    }
-
-    &__stats-unit {
-        text-transform: uppercase;
     }
 }
