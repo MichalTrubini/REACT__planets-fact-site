@@ -5,8 +5,15 @@
     padding: 2.4rem;
     background-color: #070724;
     width: 100%;
-    transition: transform 3s ease-in;
+    opacity: 0;
+    transition: all 0.5s ease-out;
     transform: translateX(100%);
+
+    &__visible {
+        background-color: #070724;
+        opacity: 1;
+        transform: translateX(0);
+    }
 
     &__item {
         display: flex;

@@ -31,7 +31,7 @@ const Planet = () => {
                         <p className='planet__description'>
                             {data[indexPlanet][section].content}
                         </p>
-                        <p><span className='planet__source'>Source:</span> <a href={data[indexPlanet][section].source} className='planet__wikipedia-link'>Wikipedia</a><img src={arrow} alt="link to wiki" className='planet__arrow'/></p>
+                        <p><span className='planet__source'>Source:</span> <a href={data[indexPlanet][section].source} target='_blank' className='planet__wikipedia-link'>Wikipedia</a><img src={arrow} alt="link to wiki" className='planet__arrow'/></p>
                     </div>
                 </div>
             </div>

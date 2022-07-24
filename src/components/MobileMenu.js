@@ -8,18 +8,11 @@ const MobileMenu = (props) => {
 
     const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
-    useEffect(() => {
-        const headerHeight = document.getElementById('header').clientHeight;
-        const screenHeight = window.innerHeight;
-        const menuHeight = screenHeight - headerHeight;
-    })
-
     const {SetPlanetHandler} = useContext(PlanetContext);
     const {ShowMenuHandler} = useContext(PlanetContext);
     
-
     return ( 
-            <div style={props.style} className='mobile-menu'>
+            <div style={{height: '100vh'}} className={props.className}>
                 <ul className='mobile-menu__list'>
                 {planets.map(planet => 
                     <li className='mobile-menu__item' key={planet}>

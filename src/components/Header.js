@@ -11,11 +11,19 @@ const Header = () => {
 
     const {ShowMenuHandler} = useContext(PlanetContext);
     const {menuVisible} = useContext(PlanetContext);
+    const [userScroll, setUserScroll] = useState(false);
+
+      document.addEventListener('scroll', function(e) {
+        if (window.scrollY > 0) {
+            setUserScroll(true);
+          }
+        else {setUserScroll(false)}
+      });
 
     return (
         <>
             <header id="header" className='header'>
-                <div className='header__container'>
+                <div className={userScroll ? 'header__container header__scroll' : 'header__container'}>
                     <nav className='header__nav'>
                         <div className="header__logo-container">
                             <h1 className="header__logo">the planets</h1>
@@ -27,7 +35,7 @@ const Header = () => {
                     <InfoNav/>
                 </div>
             </header>
-            { menuVisible && <MobileMenu style={{transform: 'translateX(0)'}}/>}  
+            <MobileMenu className={menuVisible === true ? 'mobile-menu mobile-menu__visible' : 'mobile-menu'}/>
         </>
     )
 }
