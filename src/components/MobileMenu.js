@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react';
+import React, { useContext} from 'react';
 import PlanetContext from '../assets/context/planet-context';
 
 import chevron from '../assets/images/icon-chevron.svg';
@@ -12,7 +12,7 @@ const MobileMenu = (props) => {
     const {ShowMenuHandler} = useContext(PlanetContext);
     
     return ( 
-            <div style={{height: '100vh'}} className={props.className}>
+            <div className={props.className}>
                 <ul className='mobile-menu__list'>
                 {planets.map(planet => 
                     <li className='mobile-menu__item' key={planet}>
@@ -20,7 +20,7 @@ const MobileMenu = (props) => {
                             <div className='mobile-menu__dot' id={planet+'-color'}></div>
                             <p id={planet} className='mobile-menu__planet' onClick={(event) => {SetPlanetHandler(event); ShowMenuHandler()}}>{planet}</p>
                         </div>
-                        <img src={chevron} alt='arrow'/>
+                        <img src={chevron} alt='arrow' className='mobile-menu__img'/>
                     </li>
                      ) }
                 </ul>

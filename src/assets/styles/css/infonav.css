@@ -50,4 +50,14 @@
 }
 .info-nav__selected-neptune:after {
   background-color: #497EFA;
+}
+
+@media screen and (min-width: 525px) {
+  .info-nav {
+    border: none;
+  }
+  .info-nav__list {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=infonav.css.map */

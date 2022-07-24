@@ -6,12 +6,15 @@ import hamburger from '../assets/images/icon-hamburger.svg';
 import InfoNav from './InfoNav';
 import MobileMenu from './MobileMenu';
 import PlanetContext from '../assets/context/planet-context';
+import useWindowDimensions from '../functions/WindowDimensions';
 
 const Header = () => {
 
     const {ShowMenuHandler} = useContext(PlanetContext);
     const {menuVisible} = useContext(PlanetContext);
     const [userScroll, setUserScroll] = useState(false);
+
+    const {width} = useWindowDimensions();
 
       document.addEventListener('scroll', function(e) {
         if (window.scrollY > 0) {
@@ -32,10 +35,11 @@ const Header = () => {
                             <img src={hamburger} alt="menu" onClick={ShowMenuHandler}/>
                         </div>
                     </nav>
-                    <InfoNav/>
+                    {(width < 525) && <InfoNav/>}
+                    <MobileMenu className={menuVisible === true ? 'mobile-menu mobile-menu__visible' : 'mobile-menu'}/>
                 </div>
+                
             </header>
-            <MobileMenu className={menuVisible === true ? 'mobile-menu mobile-menu__visible' : 'mobile-menu'}/>
         </>
     )
 }

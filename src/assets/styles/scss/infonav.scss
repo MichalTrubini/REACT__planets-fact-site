@@ -63,3 +63,16 @@
         background-color: #497EFA;
     }
 }
+
+@media screen and (min-width:525px) {
+
+    .info-nav {
+
+        border: none;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -1,8 +1,7 @@
 .header {
 
     position: relative;
-    height: 11.4rem;
-
+    height: 11.2rem;
 
     &__container {
         position: fixed;
@@ -28,5 +27,23 @@
 
     &__scroll {
         background-color: #070724;
+    }
+}
+
+
+@media screen and (min-width:525px) {
+    
+    .header {
+
+        height: auto;
+
+        &__nav {
+            justify-content: center;
+            padding: 1.6rem 2.4rem 0;
+        }
+
+        &__hamburger-container {
+            display: none;
+        }
     }
 }

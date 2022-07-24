@@ -55,6 +55,8 @@
         display: flex;
         flex-direction: column;
         gap: 0.8rem;
+        max-width: 32.7rem;
+        margin: auto;
     }
 
     &__stats {
@@ -82,4 +84,39 @@
         line-height: 2.6rem;
         letter-spacing: -0.75px;
     }
+}
+
+@media screen and (min-width: 525px) {
+
+    .planet {
+
+        padding-top: 13.5rem;
+
+        &__text-container {
+            text-align: left;
+            display: flex;
+        }
+
+        &__image-container {
+            padding: 11.2rem 0;
+        }
+
+        &__image {
+            width: 33%;
+        }
+
+        &__stats-container {
+            flex-direction: row;
+            margin: 0;
+            justify-content: space-between;
+            max-width: none;
+        }
+
+        &__stats {
+            flex-direction: column;
+            padding: 1.6rem 1.5rem 1.9rem;
+            align-items: flex-start;
+        }
+    }
+    
 }
