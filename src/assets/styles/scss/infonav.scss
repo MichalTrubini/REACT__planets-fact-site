@@ -17,6 +17,10 @@
         opacity: 0.5;
     }
 
+    &__section-number {
+        display: none;
+    }
+
     &__selected {
         opacity: 1;
         position: relative;
@@ -69,10 +73,77 @@
     .info-nav {
 
         border: none;
+        padding: 0;
 
         &__list {
             display: flex;
             flex-direction: column;
+            gap: 1.6rem;
         }
+
+        &__item {
+            display: flex;
+            padding: 0.8rem 2rem 0.7rem;
+            border: 1px solid hsla(0, 0%, 100%, 0.5);
+            opacity: 1;
+        }
+
+        &__selected:after {
+            content: '';
+            display: none;
+        }
+
+        &__section-number {
+            display: inline-block;
+            width: 3rem;
+            opacity: 0.5;
+        }
+
+        &__selected-mercury {
+            background-color: #419EBB;
+            border: none;
+        }
+        
+        &__selected-venus {
+            background-color: #EDA249;
+            border: none;
+        }
+    
+        &__selected-earth {
+            background-color: #6D2ED5;
+            border: none;
+        }
+    
+        &__selected-mars {
+            background-color: #D14C32;
+            border: none;
+        }
+    
+        &__selected-jupiter {
+            background-color: #D83A34;
+            border: none;
+        }
+    
+        &__selected-saturn {
+            background-color: #CD5120;
+            border: none;
+        }
+    
+        &__selected-uranus {
+            background-color: #1EC1A2;
+            border: none;
+        }
+    
+        &__selected-neptune {
+            background-color: #497EFA;
+            border: none;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .info-nav {
+        width: 46%;
     }
 }

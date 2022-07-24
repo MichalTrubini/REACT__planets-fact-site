@@ -75,17 +75,19 @@
 
 @media screen and (min-width: 525px) {
   .planet {
-    padding-top: 13.5rem;
+    padding: 13.5rem 4rem 3.6rem;
   }
   .planet__text-container {
     text-align: left;
     display: flex;
+    align-items: center;
+    gap: 6.9rem;
   }
   .planet__image-container {
     padding: 11.2rem 0;
   }
   .planet__image {
-    width: 33%;
+    width: 51.3%;
   }
   .planet__stats-container {
     flex-direction: row;
@@ -97,5 +99,36 @@
     flex-direction: column;
     padding: 1.6rem 1.5rem 1.9rem;
     align-items: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .planet {
+    padding-top: 16rem;
+  }
+  .planet__name {
+    font-size: 4.8rem;
+    line-height: 6.2rem;
+    margin-bottom: 2.4rem;
+  }
+  .planet__image-container {
+    padding: 5.4rem 0 3.7rem;
+  }
+  .planet__text {
+    width: 56%;
+  }
+  .planet__stats {
+    width: 100%;
+  }
+  .planet__stats-container {
+    gap: 1.1rem;
+  }
+  .planet__stats-number {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    letter-spacing: -0.9px;
+  }
+  .planet__stats-name {
+    padding-top: 0;
+    margin-bottom: 0.6rem;
   }
 }/*# sourceMappingURL=planet.css.map */
