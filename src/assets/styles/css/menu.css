@@ -1,4 +1,4 @@
-.mobile-menu {
+.menu {
   position: fixed;
   z-index: 99;
   top: 6.8rem;
@@ -10,12 +10,12 @@
   transition: all 0.5s ease-out;
   transform: translateX(100%);
 }
-.mobile-menu__visible {
+.menu__visible {
   background-color: #070724;
   opacity: 1;
   transform: translateX(0);
 }
-.mobile-menu__item {
+.menu__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,22 +23,22 @@
   border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.1);
   padding: 2rem 0;
 }
-.mobile-menu__item:last-child {
+.menu__item:last-child {
   border-bottom: none;
 }
-.mobile-menu__container {
+.menu__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2.5rem;
 }
-.mobile-menu__dot {
+.menu__dot {
   width: 2rem;
   height: 2rem;
   display: block;
   border-radius: 100%;
 }
-.mobile-menu__planet {
+.menu__planet {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.36px;
@@ -81,7 +81,7 @@
 }
 
 @media screen and (min-width: 525px) {
-  .mobile-menu {
+  .menu {
     position: relative;
     top: 0;
     padding: 3.9rem 2.4rem 2.7rem;
@@ -90,27 +90,40 @@
     height: auto;
     transform: none;
     transition: none;
-    border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.2);
   }
-  .mobile-menu__dot, .mobile-menu__img {
+  .menu__dot, .menu__img {
     display: none;
   }
-  .mobile-menu__item {
+  .menu__item {
     border: none;
     padding: 0;
     display: block;
     text-align: center;
   }
-  .mobile-menu__planet {
+  .menu__planet {
     font-size: 1.1rem;
     letter-spacing: 1px;
+    opacity: 0.75;
   }
-  .mobile-menu__list {
+  .menu__list {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
   }
-  .mobile-menu__container {
+  .menu__container {
     display: inline-block;
   }
-}/*# sourceMappingURL=mobile-menu.css.map */
+}
+@media screen and (min-width: 1125px) {
+  .menu {
+    padding: 0;
+    max-width: 66.5rem;
+  }
+  .menu__list {
+    gap: 3.3rem;
+  }
+  .menu__planet:hover, .menu__planet:focus {
+    cursor: pointer;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=menu.css.map */

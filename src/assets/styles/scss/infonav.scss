@@ -84,7 +84,7 @@
         &__item {
             display: flex;
             padding: 0.8rem 2rem 0.7rem;
-            border: 1px solid hsla(0, 0%, 100%, 0.5);
+            outline: 1px solid hsla(0, 0%, 100%, 0.5);
             opacity: 1;
         }
 
@@ -101,42 +101,42 @@
 
         &__selected-mercury {
             background-color: #419EBB;
-            border: none;
+            outline: none;
         }
         
         &__selected-venus {
             background-color: #EDA249;
-            border: none;
+            outline: none;
         }
     
         &__selected-earth {
             background-color: #6D2ED5;
-            border: none;
+            outline: none;
         }
     
         &__selected-mars {
             background-color: #D14C32;
-            border: none;
+            outline: none;
         }
     
         &__selected-jupiter {
             background-color: #D83A34;
-            border: none;
+            outline: none;
         }
     
         &__selected-saturn {
             background-color: #CD5120;
-            border: none;
+            outline: none;
         }
     
         &__selected-uranus {
             background-color: #1EC1A2;
-            border: none;
+            outline: none;
         }
     
         &__selected-neptune {
             background-color: #497EFA;
-            border: none;
+            outline: none;
         }
     }
 }
@@ -145,5 +145,24 @@
 
     .info-nav {
         width: 46%;
+    }
+}
+
+@media screen and (min-width:1125px) {
+
+    .info-nav {
+        width: 100%;
+
+        &__item {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            padding: 1.2rem 2.8rem 1.1rem;
+        }
+
+        &__item:hover, &__item:focus {
+            cursor: pointer;
+            background-color:hsla(0, 0%, 85%, 0.2);
+            outline: none;
+        }
     }
 }

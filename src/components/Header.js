@@ -4,7 +4,7 @@ import '../assets/styles/css/header.css';
 import hamburger from '../assets/images/icon-hamburger.svg';
 
 import InfoNav from './InfoNav';
-import MobileMenu from './MobileMenu';
+import Menu from './Menu';
 import PlanetContext from '../assets/context/planet-context';
 import useWindowDimensions from '../functions/WindowDimensions';
 
@@ -36,7 +36,7 @@ const Header = () => {
                         </div>
                     </nav>
                     {(width < 525) && <InfoNav/>}
-                    <MobileMenu className={menuVisible === true ? 'mobile-menu mobile-menu__visible' : 'mobile-menu'}/>
+                    <Menu className={menuVisible === true ? 'menu menu__visible' : 'menu'}/>
                 </div>
                 
             </header>

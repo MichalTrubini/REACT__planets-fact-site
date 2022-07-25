@@ -45,4 +45,23 @@
     line-height: 3.6rem;
     letter-spacing: -1.05px;
   }
+  .header__container {
+    border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.2);
+  }
+}
+@media screen and (min-width: 1125px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.2rem 3.2rem 2.7rem;
+    max-width: 144rem;
+  }
+  .header__nav {
+    padding: 0;
+  }
 }/*# sourceMappingURL=header.css.map */

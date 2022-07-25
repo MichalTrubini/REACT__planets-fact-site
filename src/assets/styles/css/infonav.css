@@ -68,7 +68,7 @@
   .info-nav__item {
     display: flex;
     padding: 0.8rem 2rem 0.7rem;
-    border: 1px solid hsla(0deg, 0%, 100%, 0.5);
+    outline: 1px solid hsla(0deg, 0%, 100%, 0.5);
     opacity: 1;
   }
   .info-nav__selected:after {
@@ -82,39 +82,54 @@
   }
   .info-nav__selected-mercury {
     background-color: #419EBB;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-venus {
     background-color: #EDA249;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-earth {
     background-color: #6D2ED5;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-mars {
     background-color: #D14C32;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-jupiter {
     background-color: #D83A34;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-saturn {
     background-color: #CD5120;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-uranus {
     background-color: #1EC1A2;
-    border: none;
+    outline: none;
   }
   .info-nav__selected-neptune {
     background-color: #497EFA;
-    border: none;
+    outline: none;
   }
 }
 @media screen and (min-width: 768px) {
   .info-nav {
     width: 46%;
+  }
+}
+@media screen and (min-width: 1125px) {
+  .info-nav {
+    width: 100%;
+  }
+  .info-nav__item {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    padding: 1.2rem 2.8rem 1.1rem;
+  }
+  .info-nav__item:hover, .info-nav__item:focus {
+    cursor: pointer;
+    background-color: hsla(0deg, 0%, 85%, 0.2);
+    outline: none;
   }
 }/*# sourceMappingURL=infonav.css.map */

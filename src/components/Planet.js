@@ -16,7 +16,7 @@ const Planet = () => {
     const imageSelect = () => {
         if (section === 'overview') return 'planet';
         if (section === 'structure') return 'internal';
-        if (section === 'geology') return 'geology';
+        if (section === 'geology') return 'planet';
     }
 
     const { width } = useWindowDimensions();
@@ -28,6 +28,7 @@ const Planet = () => {
             <div className="planet__content-container">
                 <div className="planet__image-container">
                     <img src={data[indexPlanet].images[imageSelect()]} alt='mercury' className='planet__image'/>
+                    {section === 'geology' && <img src={data[indexPlanet].images.geology} alt='mercury' className='planet__image-geology'/>}
                 </div>
                 <div className="planet__text-container">
                     <div className='planet__text'>
