@@ -16,6 +16,8 @@
 }
 .header__logo {
   text-transform: uppercase;
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
 }
 .header__hamburger-container {
   padding-top: 1rem;

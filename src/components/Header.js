@@ -29,7 +29,7 @@ const Header = () => {
                 <div className={userScroll ? 'header__container header__scroll' : 'header__container'}>
                     <nav className='header__nav'>
                         <div className="header__logo-container">
-                            <h1 className="header__logo">the planets</h1>
+                            <p className="header__logo">the planets</p>
                         </div>
                         <div className='header__hamburger-container'>
                             <img src={hamburger} alt="menu" onClick={ShowMenuHandler}/>
